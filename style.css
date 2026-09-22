@@ -43,9 +43,7 @@
 
         .block:hover {
             transform: scale(1.03);
-            filter: brightness(1.15);
             box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-            z-index: 10;
         }
 
 
@@ -123,22 +121,7 @@
 
 
 
-        .block-6 {
-            position: absolute;
-
-            width: 100px;
-            height: 28px;
-
-            margin-top: 10px;
-            margin-left: 20px;
-
-            background: white;
-            border: 2px solid #222;
-
-            font-size: 16px;
-            color: black;
-        }
-
+        
 
         @media (max-width: 600px) {
             body {
@@ -162,17 +145,3 @@
             }
         }
 
-        @media (max-width: 400px) {
-            .container {
-                grid-template-columns: 40px 1fr 45px;
-            }
-
-            .block-4 {
-                font-size: 12px;
-                padding: 7px;
-            }
-
-            .block-4 h2 {
-                font-size: 16px;
-            }
-        }

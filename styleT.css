@@ -18,6 +18,9 @@ body {
 
 .block {
     border: 1px solid #000;
+
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .block-1 {
@@ -97,6 +100,11 @@ body {
     text-align: center;
     vertical-align: middle;
 }
+
+        .block:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+        }
 
 
 @media (max-width: 768px) {
