@@ -4,174 +4,111 @@
 
 body {
     margin: 0;
-    padding: 20px;
+    padding: 0;
     font-family: Arial, sans-serif;
-    background: #e8e8e8;
+    background: #ffffff;
 }
 
 .container {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    min-height: 100vh;
     border-collapse: collapse;
     table-layout: fixed;
 }
 
 .block {
-    border: 3px solid #222;
-    text-align: center;
-    transition: 0.3s;
-    cursor: pointer;
+    border: 1px solid #000;
 }
 
 .block-1 {
-    width: 25%;
-    height: 120px;
-    background: #ffb3b3;
-    font-size: 32px;
+    height: 100px;
+    background: #1a73e8; 
+    color: white;
+    font-size: 24px;
     font-weight: bold;
-}
-
-.block-1:hover {
-    background: #ff7777;
-    transform: scale(1.02);
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 20px;
 }
 
 .block-2 {
-    width: 75%;
-    height: 120px;
-    background: #b3d9ff;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.block-2:hover {
-    background: #66b3ff;
-}
-
-.block-3 {
     width: 20%;
-    height: 500px;
-    background: #c7f0c7;
-    font-size: 32px;
+    background: #ffcc00; 
+    color: black;
+    font-size: 24px;
     font-weight: bold;
+    text-align: center;
     vertical-align: middle;
 }
 
-.block-3:hover {
-    background: #7ed67e;
+.block-3 {
+    height: 100px;
+    background: #1a73e8; 
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 20px;
 }
 
 .block-4 {
     width: 60%;
-    min-height: 500px;
-    padding: 25px;
+    padding: 20px 40px;
     background: white;
     text-align: left;
     vertical-align: top;
-    cursor: default;
-}
-
-.block-4:hover {
-    background: #fffdf2;
 }
 
 .block-4 h1 {
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
-    color: #333;
+    font-size: 20px;
+    color: #000;
 }
 
 .block-4 p {
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 15px 0;
+    font-size: 14px;
 }
 
 .block-4 span {
     display: block;
     margin: 10px 0 20px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    color: #555;
+    text-align: left;
+    font-size: 14px;
+    color: #000;
 }
 
 .block-4 ol {
-    padding-left: 30px;
-    line-height: 1.8;
-}
-
-.block-4 li:hover {
-    background: #eeeeee;
-    padding-left: 5px;
+    padding-left: 20px;
+    line-height: 1.5;
+    font-size: 14px;
 }
 
 .block-5 {
     width: 20%;
-    height: 500px;
-    background: #ffe0a3;
-    font-size: 32px;
+    background: #ffcc00; 
+    color: black;
+    font-size: 24px;
     font-weight: bold;
+    text-align: center;
     vertical-align: middle;
 }
 
-.block-5:hover {
-    background: #ffc966;
-}
 
 @media (max-width: 768px) {
-
-    body {
-        padding: 10px;
-    }
-
-    .container {
-        display: block;
-    }
-
-    .container tr {
-        display: block;
-    }
-
-    .container td {
+    .container, .container tr, .container td {
         display: block;
         width: 100%;
-        height: auto;
-        min-height: 100px;
     }
-
-    .block-4 {
-        min-height: auto;
+    .block-1, .block-3 {
+        height: auto;
         padding: 20px;
     }
-
-    .block-1,
-    .block-2 {
-        height: 100px !important;
-    }
-
-    .block-3,
-    .block-5 {
-        min-height: 100px !important;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .block-4 {
-        padding: 15px;
-    }
-
-    .block-4 h1 {
-        font-size: 24px;
-    }
-
-    .block-4 p {
-        font-size: 15px;
-    }
-
-    .block-4 span {
-        font-size: 16px;
+    .block-2, .block-5 {
+        min-height: 100px;
     }
 }
